@@ -25,6 +25,9 @@ li {
 
 .local-weather {
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+.weather-type {
   margin-bottom: 30%;
 }
 
