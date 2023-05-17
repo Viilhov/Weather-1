@@ -13,7 +13,7 @@ li {
 }
 .border {
   background-color: rgb(107, 105, 105);
-  background-image: url("images/bgmal3.png");
+  
   color: white;
 }
 .heading {
@@ -24,11 +24,11 @@ li {
 }
 
 .local-weather {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20%;
 }
 .weather-type {
-  margin-bottom: 30%;
+  margin-bottom: 30px;
 }
 
 }
