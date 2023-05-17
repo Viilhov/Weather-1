@@ -29,19 +29,20 @@ function showWeather(response) {
   );
 }
 
-function search(event) {
-  event.preventDefault();
+function search(city) {
   let apiKey = "8cd9be374c7c96c39a9fe73f4bf2f055";
-  let city = document.querySelector("#city-input").value;
-  let unit = "&units=metric";
-  let cityApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}${unit}`;
-  console.log(cityApiUrl);
+  let cityApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(cityApiUrl).then(showWeather);
+}
 
-  //let searchInput = document.querySelector("#city-input");
-  //let h1 = document.querySelector("#city-name");
-  //h1.innerHTML = `${searchInput.value}`;
+function handleCity(event) {
+  event.preventDefault();
+  let city = document.querySelector("#city-input").value;
+
+  search(city);
 }
 
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleCity);
+
+search("Malaga");
