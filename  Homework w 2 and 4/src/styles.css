@@ -5,23 +5,20 @@ h1 {
 li {
   list-style: none;
 }
-.big-sun {
-  color: #ffc800;
-  font-size: 70px;
-  margin-bottom: 50%;
-}
+
 .body {
-  background-color: rgb(192, 192, 192);
-  background-image: url("../images/bgmal3.png");
-  background-size: cover;
-  background-blend-mode: darken;
-  color: white;
   font-family: "Dosis", sans-serif;
   font-family: "Edu NSW ACT Foundation", cursive;
   font-family: "Oxygen", sans-serif;
 }
+.border {
+  background-color: rgb(107, 105, 105);
+  background-image: url("images/bgmal3.png");
+
+  color: white;
+}
 .heading {
-  font-size: 60px;
+  font-size: 55px;
 }
 .head {
   font-size: 35px;
